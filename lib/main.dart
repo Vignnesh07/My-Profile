@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:myprofile/homepage.dart';
+import 'package:vignneshravindran/homepage.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Vignnesh Ravindran',
-      theme: ThemeData.light(),
+      // theme: ThemeData.light(),
       home: HomePage(),
     );
   }

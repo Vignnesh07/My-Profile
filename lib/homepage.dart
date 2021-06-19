@@ -126,12 +126,12 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
                                 borderRadius: BorderRadius.circular(5.0),
                               ),
                               title: Text(
-                                "P  I  O  N  N  E  E  R  S",
+                                "P I O N N E E R S",
                                 style: TextStyle(
                                   fontSize: 9,
                                   color: Colors.white,
                                   fontFamily: 'Poppins',
-                                  fontWeight: FontWeight.bold,
+                                  fontWeight: FontWeight.normal,
                                 ),
                               ),
                               trailing: Container(
@@ -176,12 +176,12 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
                                 borderRadius: BorderRadius.circular(5.0),
                               ),
                               title: Text(
-                                "T  B  S  B    A  P  P",
+                                "T B S B  A P P",
                                 style: TextStyle(
                                   fontSize: 9,
                                   color: Colors.white,
                                   fontFamily: 'Poppins',
-                                  fontWeight: FontWeight.bold,
+                                  fontWeight: FontWeight.normal,
                                 ),
                               ),
                               trailing: Icon(
@@ -222,12 +222,12 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
                                 borderRadius: BorderRadius.circular(5.0),
                               ),
                               title: Text(
-                                "P  K    R  E  T  A  I  L  S    A  P  P",
+                                "P K  R E T A I L S  A P P",
                                 style: TextStyle(
                                   fontSize: 9,
                                   color: Colors.white,
                                   fontFamily: 'Poppins',
-                                  fontWeight: FontWeight.bold,
+                                  fontWeight: FontWeight.normal,
                                 ),
                               ),
                               trailing: Icon(
@@ -268,12 +268,12 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
                                 borderRadius: BorderRadius.circular(5.0),
                               ),
                               title: Text(
-                                "G  I  T  H  U  B",
+                                "G I T H U B",
                                 style: TextStyle(
                                   fontSize: 9,
                                   color: Colors.white,
                                   fontFamily: 'Poppins',
-                                  fontWeight: FontWeight.bold,
+                                  fontWeight: FontWeight.normal,
                                 ),
                               ),
                               trailing: Icon(
@@ -314,12 +314,12 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
                                 borderRadius: BorderRadius.circular(5.0),
                               ),
                               title: Text(
-                                "L  I  N  K  E  D  I  N",
+                                "L I N K E D I N",
                                 style: TextStyle(
                                   fontSize: 9,
                                   color: Colors.white,
                                   fontFamily: 'Poppins',
-                                  fontWeight: FontWeight.bold,
+                                  fontWeight: FontWeight.normal,
                                 ),
                               ),
                               trailing: Icon(
@@ -347,7 +347,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
             
                       SizedBox(height: 30.0),
                     
-                      Divider(height: 1.0, color: Colors.grey[800]),
+                      Divider(height: 1.0, color: Colors.grey[600]),
             
                       SizedBox(height: 30.0),
             

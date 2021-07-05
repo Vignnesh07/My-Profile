@@ -158,6 +158,52 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
                               },
                             ),
                           ),
+
+                          SizedBox(height: 8.0),
+                    
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 30.0),
+                            child: ListTile(
+                              dense: true,
+                              enabled: true,
+                              enableFeedback: true,
+                              minVerticalPadding: 5,
+                              tileColor: Color(0xFF786EE6),     // 0xFF9C6EE6
+                              hoverColor: Colors.deepPurple[500],
+                              visualDensity: VisualDensity.adaptivePlatformDensity,
+                              contentPadding: EdgeInsets.symmetric(horizontal: 25.0),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(5.0),
+                              ),
+                              title: Text(
+                                "G I T H U B",
+                                style: TextStyle(
+                                  fontSize: 9,
+                                  color: Colors.white,
+                                  fontFamily: 'Poppins',
+                                  fontWeight: FontWeight.normal,
+                                ),
+                              ),
+                              trailing: Icon(
+                                FeatherIcons.github,
+                                color: Colors.white,
+                                size: 16.0,
+                              ),
+                              onTap: () async {
+                                if (await canLaunch(githubUrl)){
+                                  await launch(
+                                    githubUrl,
+                                    forceSafariVC: false,
+                                    forceWebView: false,
+                                  );
+                                }
+                    
+                                else {
+                                  throw 'Could not launch';
+                                }
+                              },
+                            ),
+                          ),
                     
                           SizedBox(height: 8.0),
                     
@@ -168,7 +214,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
                               enabled: true,
                               enableFeedback: true,
                               minVerticalPadding: 5,
-                              tileColor: Color(0xFF786EE6),
+                              tileColor: Color(0xFF866EE6),           // 0xFF786EE6
                               hoverColor: Colors.deepPurple[200],
                               visualDensity: VisualDensity.adaptivePlatformDensity,
                               contentPadding: EdgeInsets.symmetric(horizontal: 25.0),
@@ -214,7 +260,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
                               enabled: true,
                               enableFeedback: true,
                               minVerticalPadding: 5,
-                              tileColor: Color(0xFF866EE6),
+                              tileColor: Color(0xFF9C6EE6),   // 0xFF866EE6
                               hoverColor: Colors.deepPurple[400],
                               visualDensity: VisualDensity.adaptivePlatformDensity,
                               contentPadding: EdgeInsets.symmetric(horizontal: 25.0),
@@ -250,53 +296,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
                               },
                             ),
                           ),
-                    
-                          SizedBox(height: 8.0),
-                    
-                          Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 30.0),
-                            child: ListTile(
-                              dense: true,
-                              enabled: true,
-                              enableFeedback: true,
-                              minVerticalPadding: 5,
-                              tileColor: Color(0xFF9C6EE6),
-                              hoverColor: Colors.deepPurple[500],
-                              visualDensity: VisualDensity.adaptivePlatformDensity,
-                              contentPadding: EdgeInsets.symmetric(horizontal: 25.0),
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(5.0),
-                              ),
-                              title: Text(
-                                "G I T H U B",
-                                style: TextStyle(
-                                  fontSize: 9,
-                                  color: Colors.white,
-                                  fontFamily: 'Poppins',
-                                  fontWeight: FontWeight.normal,
-                                ),
-                              ),
-                              trailing: Icon(
-                                FeatherIcons.github,
-                                color: Colors.white,
-                                size: 16.0,
-                              ),
-                              onTap: () async {
-                                if (await canLaunch(githubUrl)){
-                                  await launch(
-                                    githubUrl,
-                                    forceSafariVC: false,
-                                    forceWebView: false,
-                                  );
-                                }
-                    
-                                else {
-                                  throw 'Could not launch';
-                                }
-                              },
-                            ),
-                          ),
-                    
+                                        
                           SizedBox(height: 8.0),
                     
                           Padding(
